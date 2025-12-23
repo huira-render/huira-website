@@ -1,0 +1,11 @@
+Huira:
+  avatar: "/assets/huira-logos/unknown.png"
+  links:
+    - label: "Home"
+      url: "/"
+    - label: "Quick-Start Guide"
+      url: "/setup/quick-start-guide/"
+    - label: "Documentation"
+      url: "/documentation/"
+    - label: "About"
+      url: "/about/"

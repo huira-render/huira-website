@@ -1,0 +1,8 @@
+# main links
+main:
+  - title: "Quick-Start Guide"
+    url: "/setup/quick-start-guide/"
+  - title: "Documentation"
+    url: "https://docs.huira.space/"
+  - title: "About"
+    url: "/about/"
