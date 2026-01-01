@@ -30,6 +30,14 @@ markdown: kramdown
 include: ["_pages"]
 theme: "minimal-mistakes-jekyll"
 minimal_mistakes_skin: "dark"
+
+# Disable RSS feed link in footer
+atom_feed:
+  hide: true
+
 plugins:
-  - jekyll-feed
+  #- jekyll-feed
   - jekyll-include-cache
+
+exclude:
+  - README.md
