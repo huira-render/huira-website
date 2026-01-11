@@ -1,5 +1,5 @@
 Huira:
-  avatar: "/assets/huira-logos/unknown.png"
+  avatar: "/assets/huira-logos/full/white_on_transparent.svg"
   links:
     - label: "Home"
       url: "/"

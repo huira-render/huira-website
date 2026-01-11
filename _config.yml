@@ -21,6 +21,7 @@
 title: Huira
 email: chrisrsg@gmail.com
 description: Ray tracing API for Space Applications
+logo: "/assets/huira-logos/wide/wide_white_on_transparent.svg"
 baseurl: ""
 url: "https://www.huira.space"
 github_username:  huira-render
