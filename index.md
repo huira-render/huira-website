@@ -13,6 +13,8 @@ header:
       url: "https://pypi.org/project/huira/"
     - label: "<i class='fas fa-download'></i> On vcpkg"
       url: "https://vcpkg.io/en/package/huira"
+    - label: "<i class='fas fa-download'></i> On conda"
+      url: "https://anaconda.org/channels/conda-forge/packages/huira/overview"
 excerpt: >
   A ray-tracing API for Space Applications<br />
 ---
