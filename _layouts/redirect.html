@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{%- comment -%}
+  A page that has moved. Set redirect_to in its front matter; a value starting
+  with "/" is a page on this site.
+{%- endcomment -%}
+{%- if page.redirect_to contains "://" -%}
+  {%- assign target = page.redirect_to -%}
+{%- else -%}
+  {%- assign target = page.redirect_to | absolute_url -%}
+{%- endif -%}
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting…</title>
+  <link rel="canonical" href="{{ target }}">
+  <meta http-equiv="refresh" content="0; url={{ target }}">
+  <meta name="robots" content="noindex">
+</head>
+<body>
+  <p>This page has moved to <a href="{{ target }}">{{ target }}</a>.</p>
+</body>
+</html>

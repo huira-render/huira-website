@@ -21,15 +21,36 @@
 title: Huira
 email: chrisrsg@gmail.com
 description: Ray tracing API for Space Applications
+logo: "/assets/huira-logos/full/white_on_transparent.svg"
 baseurl: ""
 url: "https://www.huira.space"
 github_username:  huira-render
+
+# The other huira.space sites. Templates build their links from these;
+# _data/navigation.yml can't use variables, so its URLs are written out there.
+docs_url: "https://docs.huira.space"
+quickstart_url: "/setup/quick-start-guide/"
+validation_url: "https://validation.huira.space"
+media_url: "https://media.huira.space"
+repo_url: "https://github.com/huira-render/huira"
+
+# Image for link previews (Open Graph and Twitter cards)
+og_image: "/assets/images/huira_banner.png"
 
 # Build settings
 markdown: kramdown
 include: ["_pages"]
 theme: "minimal-mistakes-jekyll"
 minimal_mistakes_skin: "dark"
+
+# Disable RSS feed link in footer
+atom_feed:
+  hide: true
+
 plugins:
-  - jekyll-feed
+  #- jekyll-feed
   - jekyll-include-cache
+
+exclude:
+  - README.md
+  - vendor/

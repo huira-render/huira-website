@@ -1,0 +1,109 @@
+---
+layout: splash
+permalink: /
+hidden: true
+header:
+  overlay_color: "#5e616c"
+  overlay_image: /assets/images/huira_banner.png
+  actions:
+    - label: "<i class='fas fa-rocket'></i> Quick Start"
+      url: "/setup/quick-start-guide/"
+    - label: "<i class='fas fa-book'></i> API Docs"
+      url: "https://docs.huira.space/"
+    - label: "<i class='fab fa-github'></i> Source Code"
+      url: "https://github.com/huira-render/huira"
+excerpt: >
+  A ray-tracing API for Space Applications
+---
+
+<section class="huira-section" id="install">
+  <h2>Install</h2>
+  <div class="huira-install">
+    <div class="huira-install__row">
+      <div class="huira-install__where">
+        <a href="https://pypi.org/project/huira/">PyPI</a>
+        <span>Python</span>
+      </div>
+      <pre><code>pip install huira</code></pre>
+    </div>
+    <div class="huira-install__row">
+      <div class="huira-install__where">
+        <a href="https://anaconda.org/channels/conda-forge/packages/huira/overview">conda-forge</a>
+        <span>Python and C++</span>
+      </div>
+      <pre><code>conda install conda-forge::huira</code></pre>
+    </div>
+    <div class="huira-install__row">
+      <div class="huira-install__where">
+        <a href="https://vcpkg.io/en/package/huira">vcpkg</a>
+        <span>C++</span>
+      </div>
+      <pre><code>vcpkg install huira[tools]</code></pre>
+    </div>
+  </div>
+  <p class="huira-install__more">
+    Or <a href="{{ site.docs_url }}/getting_started/build_instructions/index.html">build from source</a> on Linux, macOS or Windows.
+  </p>
+</section>
+
+<section class="huira-section" id="gallery">
+  <h2>Rendered with Huira</h2>
+  <p class="huira-section__lead">
+    Each of these comes from one of the quick-start examples, in Python and C++. Select one to see how it was made.
+  </p>
+  <div class="huira-gallery">
+    {%- for item in site.data.gallery %}
+      {%- if item.url %}
+        {%- assign href = item.url %}
+      {%- else %}
+        {%- capture href %}{{ site.docs_url }}/examples/{{ item.example }}.html{% endcapture %}
+      {%- endif %}
+    <a class="huira-gallery__item" href="{{ href }}">
+      <img src="{{ site.media_url }}/{{ item.thumb | default: item.image }}" alt="{{ item.title }}: {{ item.caption }}" loading="lazy">
+      <span class="huira-gallery__caption">
+        <strong>{{ item.title }}</strong>
+        <span>{{ item.caption }}</span>
+      </span>
+    </a>
+    {%- endfor %}
+  </div>
+</section>
+
+<section class="huira-section" id="resources">
+  <h2>Resources</h2>
+  <div class="huira-resources">
+    <div class="huira-resource">
+      <h3><a href="{{ site.quickstart_url }}">Quick Start</a></h3>
+      <p>
+        Examples that walk through Huira one feature at a time, each building on the ones before it.
+        Every example comes in Python and C++, lists the data it needs, and shows what it renders.
+      </p>
+      <a class="btn btn--primary" href="{{ site.quickstart_url }}">Start with the examples</a>
+    </div>
+    <div class="huira-resource">
+      <h3><a href="{{ site.docs_url }}/">API Documentation</a></h3>
+      <p>
+        The C++ and Python API reference, build instructions for each platform, and notes on how Huira
+        models light transport, optics and sensors.
+      </p>
+      <a class="btn btn--primary" href="{{ site.docs_url }}/">Read the docs</a>
+    </div>
+    <div class="huira-resource">
+      <h3><a href="{{ site.validation_url }}/">Validation</a></h3>
+      <p>
+        Huira's renders compared against real flight imagery, so you can see how closely it reproduces
+        what a spacecraft's camera saw.
+      </p>
+      <a class="btn btn--primary" href="{{ site.validation_url }}/">See the comparisons</a>
+    </div>
+    <div class="huira-resource">
+      <h3><a href="{{ site.media_url }}/">Media and Data</a></h3>
+      <p>
+        The models, textures and star catalogs the examples use, past versions of prebuilt files, and
+        alternative datasets, each at a permanent link you can download from.
+        <a href="{{ '/about/#media-and-data' | relative_url }}">What's there, and why</a>.
+      </p>
+      <a class="btn btn--primary" href="{{ site.media_url }}/">Browse the files</a>
+    </div>
+  </div>
+</section>
