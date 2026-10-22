@@ -1,0 +1,51 @@
+# Images on the home page. Each is a path in the media bucket (site.media_url),
+# and links to the page that explains it.
+#
+#   image:   path in the bucket, shown in the grid
+#   title:   bold line under the image
+#   caption: one short line under the title
+#   example: a quick-start example's folder name; the image links to its page
+#            on the docs site. Use `url` instead to link anywhere else (a
+#            validation case, say).
+#   thumb:   optional smaller copy in the bucket to show in the grid instead,
+#            for images that are slow to load at full size
+
+- image: examples/03_load_a_model.png
+  title: The Gateway
+  caption: NASA's model of the Gateway, loaded from glTF and path traced.
+  example: 03_load_a_model
+
+- image: examples/12_motion_blur_long.png
+  title: Motion blur
+  caption: The Gateway spinning once a second, over a 16 ms exposure.
+  example: 12_motion_blur
+
+- image: examples/07_clouds_and_atmosphere.png
+  title: Clouds and atmosphere
+  caption: A cloud shell over the Earth, and an atmosphere that scatters light.
+  example: 07_clouds_and_atmosphere
+
+- image: examples/06_materials_and_textures_night.png
+  title: City lights
+  caption: The Earth's night side, with emissive city lights.
+  example: 06_materials_and_textures
+
+- image: examples/09_stars.png
+  title: Orion
+  caption: Stars from the Tycho-2 catalog.
+  example: 09_stars
+
+- image: examples/10_optics.png
+  title: The Pleiades
+  caption: Diffraction, scattered light and distortion in the camera's optics.
+  example: 10_optics
+
+- image: examples/08_lights_planetshine.png
+  title: Planetshine
+  caption: A satellite's night side, lit by the planet below it.
+  example: 08_lights
+
+- image: examples/04_truth_data_normals.png
+  title: Truth data
+  caption: Surface normals, one of the truth images rendered with each picture.
+  example: 04_truth_data

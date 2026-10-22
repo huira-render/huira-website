@@ -1,10 +1,6 @@
 ---
-title: "Quick-Start Guide"
-layout: single
+layout: redirect
 permalink: /setup/quick-start-guide/
-excerpt: "How to quickly get started with Huira"
-toc: true
+redirect_to: https://docs.huira.space/examples/
+sitemap: false
 ---
-
-**Coming Soon:** We are currently working on a quick-start guide for the current version of Huira.
-{: .notice--warning}

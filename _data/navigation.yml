@@ -1,10 +1,11 @@
-# main links
+# main links (the masthead). These URLs can't use site variables, so keep them
+# in step with docs_url, quickstart_url and validation_url in _config.yml.
 main:
-  - title: "Quick-Start Guide"
-    url: "/setup/quick-start-guide/"
-  - title: "Showcases"
-    url: "/showcases/"
-  - title: "Documentation"
+  - title: "API Docs"
     url: "https://docs.huira.space/"
+  - title: "Quick Start"
+    url: "https://docs.huira.space/examples/"
+  - title: "Validation"
+    url: "https://validation.huira.space/"
   - title: "About"
     url: "/about/"
